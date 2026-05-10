@@ -1,7 +1,13 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 
 const UpdateGame = () => {
+  const now = new Date();
+  const showDevBlog = now >= new Date('2026-05-15T00:00:00');
+  const showDeepLoreLaw = now >= new Date('2026-05-18T00:00:00');
+
   return (
     <section className="bg-black w-full bg-[url('/lp/Update/bgroleplay.png')] bg-cover bg-center text-white mb-40 relative">
       <div className="pointer-events-none flex !w-full h-[2500px] absolute bottom-0 z-0 bg-gradient-to-t from-black to-transparent md:h-40" />
@@ -127,12 +133,150 @@ const UpdateGame = () => {
                   Eclipsing Escapism
                 </h3>
                 <p className="text-sm md:text-[16px] text-white/50 font-normal">
-                  Playing "Make Believe" means more than escaping real life. It
+                  Playing &quot;Make Believe&quot; means more than escaping real life. It
                   is the first step in actualizing your dreams.
                 </p>
               </div>
             </div>
           </Link>
+
+          {/* Card 6 - Deep Lore: Magic as Music */}
+          <Link href="/updates/deep-lore-magic-as-music" className="block">
+            <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+              <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                <Image
+                  src="/lp/Update/cardUpdate001.png"
+                  alt="Deep Lore: Magic as Music"
+                  width={400}
+                  height={248}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-5 md:p-6">
+                <p className="text-sm text-gray-400">
+                  Hank Whitson • 5 min read
+                </p>
+                <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                  Deep Lore: Magic as Music
+                </h3>
+                <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                  An easy introduction to all things magical in the world of
+                  Anno Amagium, explained through the lens of music.
+                </p>
+              </div>
+            </div>
+          </Link>
+
+          {/* Card 7 - Rules in Focus: Hotrod Magic 1 */}
+          <Link href="/updates/rules-in-focus-hotrod-magic-1" className="block">
+            <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+              <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                <Image
+                  src="/lp/Update/cardUpdate002.png"
+                  alt="Rules in Focus: Hotrod Magic 1"
+                  width={400}
+                  height={248}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-5 md:p-6">
+                <p className="text-sm text-gray-400">
+                  Hank Whitson • 8 min read
+                </p>
+                <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                  Rules in Focus: Hotrod Magic 1
+                </h3>
+                <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                  The basic mechanics and dynamics of Anno Amagium&apos;s magic
+                  system.
+                </p>
+              </div>
+            </div>
+          </Link>
+
+          {/* Card 8 - Rules in Focus: Hotrod Magic 2 */}
+          <Link href="/updates/rules-in-focus-hotrod-magic-2" className="block">
+            <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+              <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                <Image
+                  src="/lp/Update/cardUpdate003.png"
+                  alt="Rules in Focus: Hotrod Magic 2"
+                  width={400}
+                  height={248}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-5 md:p-6">
+                <p className="text-sm text-gray-400">
+                  Hank Whitson • 5 min read
+                </p>
+                <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                  Rules in Focus: Hotrod Magic 2
+                </h3>
+                <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                  Adding depth, control, and nuance to the magic system.
+                </p>
+              </div>
+            </div>
+          </Link>
+
+          {/* Card 9 - Dev Blog: Making Magic Happen (May 15) */}
+          {showDevBlog && (
+            <Link href="/updates/dev-blog-making-magic-happen" className="block">
+              <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+                <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                  <Image
+                    src="/lp/Update/cardUpdate001.png"
+                    alt="Dev. Blog 1: Making Magic Happen"
+                    width={400}
+                    height={248}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-sm text-gray-400">
+                    Hank Whitson • May 15, 2026 • 7 min read
+                  </p>
+                  <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                    Dev. Blog 1: Making Magic Happen
+                  </h3>
+                  <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                    What we wanted out of our magic system and how we&apos;ve gone
+                    about getting it.
+                  </p>
+                </div>
+              </div>
+            </Link>
+          )}
+
+          {/* Card 10 - Deep Lore: Amagiate Law, Technology, and Culture (May 18) */}
+          {showDeepLoreLaw && (
+            <Link href="/updates/deep-lore-amagiate-law-technology-culture" className="block">
+              <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+                <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                  <Image
+                    src="/lp/Update/cardUpdate002.png"
+                    alt="Deep Lore: Amagiate Law, Technology, and Culture"
+                    width={400}
+                    height={248}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-sm text-gray-400">
+                    Hank Whitson • May 18, 2026 • 6 min read
+                  </p>
+                  <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                    Deep Lore: Amagiate Law, Technology, and Culture
+                  </h3>
+                  <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                    How magic shapes daily life and scientific advancement in
+                    Anno Amagium.
+                  </p>
+                </div>
+              </div>
+            </Link>
+          )}
         </div>
       </div>
     </section>
