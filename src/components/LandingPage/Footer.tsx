@@ -29,14 +29,14 @@ const Footer: React.FC = () => {
             alt="Echelon Logo"
             className="w-5 h-5"
           />
-          <span className="text-sm mt-4 md:mt-0">© To Whit Ventures</span>
+          <span className="text-[14px] leading-[20px] font-medium mt-4 md:mt-0">© To Whit Ventures</span>
         </div>
 
         {/* Divider */}
         <img src="/lp/divider.png" alt="" className="w-full mt-6 md:hidden" />
 
         {/* Page links */}
-        <ul className="flex flex-row items-center justify-center gap-6 text-sm mt-6 md:mt-0 md:flex-row">
+        <ul className="flex flex-row items-center justify-center gap-6 text-[14px] leading-[20px] font-medium mt-6 md:mt-0 md:flex-row">
           {PAGES.map(({ href, label }) => (
             <li key={href}>
               <a href={href} className="hover:underline">
@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
         <img src="/lp/divider.png" alt="" className="w-full mt-6 md:hidden" />
 
         {/* Social links */}
-        <ul className="flex flex-row items-center justify-center gap-6 text-sm mt-6 md:mt-0 md:flex-row">
+        <ul className="flex flex-row items-center justify-center gap-6 text-[14px] leading-[20px] font-medium mt-6 md:mt-0 md:flex-row">
           {SOCIAL.map(({ href, label }) => (
             <li key={href}>
               <a

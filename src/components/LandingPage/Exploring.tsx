@@ -13,7 +13,7 @@ export default function Exploring({}) {
   const pathname = usePathname();
   const shouldRenderTtrpg = pathname !== '/games';
   return (
-    <section className="w-full bg-cover bg-center flex flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] px-6 md:px-0 mb-[120px] md:mb-[180px]">
+    <section className="w-full bg-cover bg-center flex flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] px-6 md:px-20 mt-[200px]">
       <div
         className={`flex flex-col md:flex-row items-center md:items-start justify-between w-full gap-4 pt-10 ${
           pathname === '/games' ? 'pb-0' : 'pb-40'
@@ -60,12 +60,12 @@ export default function Exploring({}) {
                     </div>
 
                     <Link
-                      href="https://storage.googleapis.com/gondola-public-bucket/anno_amagium_rpg_book_core_rules.pdf"
+                      href="https://www.instagram.com/gameonechelon/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-fit btn"
                     >
-                      Download
+                      Follow
                     </Link>
                   </div>
 

@@ -76,7 +76,7 @@ const Header: React.FC = () => {
 
         <button
           onClick={scrollToSubscribe}
-          className="hidden sm:block bg-white text-black rounded-full px-6 py-2 font-medium shadow whitespace-nowrap"
+          className="hidden sm:block bg-white text-black rounded-full px-6 py-2 text-[14px] leading-[20px] font-medium shadow whitespace-nowrap"
         >
           Subscribe
         </button>

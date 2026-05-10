@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const CardSections = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-4 py-6 items-center px-6">
+    <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-4 items-center px-6 md:px-20 mt-[200px] max-w-[1440px] w-full">
       {/* Card Discord */}
       <div className="md:pt-20 relative w-full md:w-[632px] md:pb-12 h-[550px] md:h-[730px] rounded-2xl bg-surface-primary flex flex-col items-center justify-end md:justify-between p-6 overflow-hidden">
         <img
@@ -28,14 +28,14 @@ const CardSections = () => {
         <div className="flex flex-col items-center justify-center">
           <div className="text-[28px] leading-[36px]  tracking-[-1.12px] md:text-[44px] md:leading-[49px] md:text-center relative z-10">
             <h2 className="font-semibold text-white mb-2">
-              Join the the Echelon Discord <br className="md:hidden" /> Server
+              Join the Echelon Discord <br className="md:hidden" /> Server
             </h2>
           </div>
           <Link
             href="https://discord.gg/8vg87vZyfS"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-nowrap mt-6 px-6 w-full md:w-[170px] py-2 h-12 rounded-full bg-[#00B4FF] text-white font-medium hover:bg-[#0094d4] transition relative z-10 text-[16px] md:text-base flex items-center justify-center"
+            className="text-nowrap mt-6 px-6 w-full md:w-[170px] py-2 h-12 rounded-full bg-[#199FEC] text-white font-medium hover:bg-[#0094d4] transition relative z-10 text-[16px] md:text-base flex items-center justify-center"
           >
             Join community
           </Link>
@@ -67,7 +67,7 @@ const CardSections = () => {
           <div className="text-[28px] leading-[36px] tracking-[-1.12px] md:text-[44px] md:leading-[49px] md:text-center relative z-10">
             <h2 className="font-semibold text-white mb-2">
               Follow us on Instagram for{' '}
-              <span className="text-[#00B4FF]">
+              <span className="text-[#199FEC]">
                 more loot <br className="hidden md:hidden" />
                 and quests!
               </span>
@@ -77,7 +77,7 @@ const CardSections = () => {
             href="https://www.instagram.com/gameonechelon/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-nowrap mt-6 px-6 w-full md:w-[170px] py-2 h-12 rounded-full bg-[#00B4FF] text-white font-medium hover:bg-[#0094d4] transition relative z-10 text-[16px] md:text-base flex items-center justify-center"
+            className="text-nowrap mt-6 px-6 w-full md:w-[170px] py-2 h-12 rounded-full bg-[#199FEC] text-white font-medium hover:bg-[#0094d4] transition relative z-10 text-[16px] md:text-base flex items-center justify-center"
           >
             Follow us
           </Link>

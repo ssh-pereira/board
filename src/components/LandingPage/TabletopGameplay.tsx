@@ -1,7 +1,7 @@
 export default function TabletopGameplay({}) {
   return (
     <>
-      <section className="hidden md:flex w-full bg-cover bg-center flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] ">
+      <section className="hidden md:flex w-full bg-cover bg-center flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] mt-[200px]">
         <div className="flex items-center justify-center bg-[url(/lp/tableTopgameplaybg.png)] bg-cover bg-top w-full min-h-screen relative overflow-hidden px-6 md:px-0">
           <div className="w-full max-w-[900px] mx-auto flex flex-col items-start md:items-center justify-center text-left md:text-center px-4">
             <h1 className="text-white text-[40px] md:text-[56px] leading-[48px] md:leading-[64px] font-semibold tracking-[-1.6px] md:tracking-[-2.24px] mb-6 md:mb-[68px] text-left md:text-center">
@@ -55,7 +55,7 @@ export default function TabletopGameplay({}) {
 
       {/*Versão MOBILE*/}
 
-      <section className="flex w-full bg-top bg-cover bg-[url(/lp/tableTopgameplaybg-mob.png)] flex-col relative overflow-hidden md:hidden">
+      <section className="flex w-full bg-top bg-cover bg-[url(/lp/tableTopgameplaybg-mob.png)] flex-col relative overflow-hidden md:hidden mt-[200px]">
         <div className="flex w-full  h-full mb-40 relative">
           <div className="w-full flex flex-col px-6 mt-[102px]">
             <h1 className="text-white text-[40px] md:text-[56px] leading-[48px] md:leading-[64px] font-semibold tracking-[-1.6px] md:tracking-[-2.24px] mb-6 md:mb-[68px] text-left md:text-center">

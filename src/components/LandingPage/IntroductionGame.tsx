@@ -7,7 +7,7 @@ export default function IntroductionGame() {
     }
   };
   return (
-    <section className="w-full bg-black md:max-w-[1440px] text-white relative">
+    <section className="w-full bg-[#071826] md:max-w-[1440px] text-white relative">
       <div className="hidden md:flex w-full justify-center absolute -top-4 left-0 right-0 z-20">
         <div className="inline-flex items-center justify-center gap-2 rounded-full bg-[#FC5212] px-3 py-1 text-white text-[16px] leading-6 font-normal">
           <span>Introducing Our New Game</span>
@@ -61,7 +61,7 @@ export default function IntroductionGame() {
           {/* Call to Action Button */}
           <button
             onClick={scrollToSubscribe}
-            className="bg-white text-black px-8 py-4 rounded-full font-normal"
+            className="bg-white text-black text-[18px] leading-[28px] px-8 py-3 rounded-full font-medium"
           >
             Subscribe to our waiting list
           </button>
