@@ -20,6 +20,8 @@ Here are the main bullet points and types of magic explained in the context of m
 
 All humans and animals have an in-born, metaphysical organ known as a **wyrd**. Wyrds are like lungs for ether. Respiring ether is an automatic and essential process, like breathing air, and it results in a certain, passive supernatural pressure that people can sense with their own wyrds. Like music creates vibrations, all forms of magic create etheric pressure, or **ripples**. In humans, these ripples typically manifest as an aura of etheric pressure that scales in direct proportion to the strength of their wyrd.
 
+![Wyrds - Lungs for Breathing Ether](/lp/blog/deep-lore-wyrds.png)
+
 
 ## Emanations – Magic Speech
 
@@ -50,8 +52,10 @@ Finally, we come to **enchanting** (where our metaphor admittedly stretches a bi
 
 Just as people can injure or tear their vocal cords by pushing themselves too far, spell casters can also harm themselves by exceeding their limits. Casting spells accrues a supernatural momentum known as **Exus**. Exus simultaneously makes magic stronger and more dangerous. Mechanically, this means that instead of a finite pool of mana points, players can use as much magic as they want—provided they are willing to deal with the consequences.
 
+![Exus - Straining Your Voice](/lp/blog/deep-lore-exus.png)
 
-## **How do you translate this system to actual *gameplay*?**
+
+## How does this system translate to actual gameplay?
 
 Check back on Friday for our first **Rules in Focus** features. It will be a double header that details the mechanics of spellcasting, including an overview of the rules, specific examples with diagrams. All this through the lens of another easy-to-grasp metaphor: race cars. Until then!
 `;

@@ -145,7 +145,7 @@ const UpdateGame = () => {
             <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
               <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
                 <Image
-                  src="/lp/Update/cardUpdate001.png"
+                  src="/lp/blog/deep-lore-cover.png"
                   alt="Deep Lore: Magic as Music"
                   width={400}
                   height={248}
@@ -172,7 +172,7 @@ const UpdateGame = () => {
             <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
               <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
                 <Image
-                  src="/lp/Update/cardUpdate002.png"
+                  src="/lp/blog/hotrod-1-sledge-fist.png"
                   alt="Rules in Focus: Hotrod Magic 1"
                   width={400}
                   height={248}
@@ -199,7 +199,7 @@ const UpdateGame = () => {
             <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
               <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
                 <Image
-                  src="/lp/Update/cardUpdate003.png"
+                  src="/lp/blog/hotrod-2-exus-shrewd.png"
                   alt="Rules in Focus: Hotrod Magic 2"
                   width={400}
                   height={248}

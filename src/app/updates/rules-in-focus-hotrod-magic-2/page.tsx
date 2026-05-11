@@ -4,7 +4,7 @@ import { MarkdownRenderer } from '@/components/markdown-renderer';
 
 const markdownText = `# Rules in Focus: Hotrod Magic 2
 
-Adding depth, control, and nuance to the magic system
+##### Adding depth, control, and nuance to the magic system
 
 
 ## A Brief Recap
@@ -28,7 +28,7 @@ While the Ability Check and Exus systems create a fun risk-reward dynamic, havin
 
 Enter animate spirits, or **anima** for short. Anima fuel powerful magical spells called **Contracts** and non-combat spells known as **Rituals**. (Structured magic that does not require anima is considered **Sorcery**.) Certain spells (like Fireball, detailed below) can be cast as Contracts or Sorceries, with an anima yielding additional benefits, and/or reduced AP costs. While anima do introduce a resource management mechanic (similar to MP or Spell Slots), anima are commodities rather than a currency with distinguishing characteristics of their own.
 
-[Fireball Spell Block]
+![Fireball Spell Block](/lp/blog/hotrod-2-fireball.png)
 
 Anima give players the option to break the glass on expensive-to-cast spells that can turn the tide of battle, offering decisive opportunities to capitalize on fortunate (or merely uncommon) momentum in their slotted Ability Cards. The results are the sort legendary plays (and abject disasters) that go down in gamers' memories.
 
@@ -37,7 +37,7 @@ Anima give players the option to break the glass on expensive-to-cast spells tha
 
 When players need to keep themselves from going over their exus limit, they can take Focus Actions to reduce their current exus level, by selecting a **Focus Action**.
 
-[(Exus Symbol) 75] [Shrewd Card with Wyrd value circled]
+![Exus Symbol and Shrewd Card](/lp/blog/hotrod-2-exus-shrewd.png)
 
 While Ability Checks slot a card into the character's sheet, **Focus Checks** draw an Ability Card, check the card's **Exus** value to reduce (or raise) the character's Exus Level accordingly, and then immediately discard it. In terms of action economy, Focus Actions are relatively cheap (only 2AP). Depending on the character's initiative mode (which determines a player's total AP in a given turn), they can fit in a Focus Action with a Move Action, Attack Action, or even a moderately complex Ability. Players can even use frequent Focus Checks to potentially "skip" over undesirable Ability Cards through skillful use of spells (Divination, anyone?) or through sheer luck.
 
@@ -46,7 +46,7 @@ While Ability Checks slot a card into the character's sheet, **Focus Checks** dr
 
 But what about bad luck? Players can suffer a string of unfortunate pulls on Ability Checks—just like many TTRPG players have nights (or career-long stretches) of awful luck with the dice. To alleviate the frustration of drawing back-to-back Inept Cards or similar edge cases, characters can perform a **Center Action** to clear all their currently slotted cards.
 
-[First with two Inept Cards and one Shrewd Card slotted] [An empty grid with no cards slotted]
+![Ability Card Slots and Center Action](/lp/blog/hotrod-2-ejector-seat.png)
 
 Just like that, the playing field is even again. However, centering is a relatively expensive action (at 3 action points), so it is generally better to pivot rather than "digging your heels in" and trying to force a particular spell with repeated Center Actions.
 

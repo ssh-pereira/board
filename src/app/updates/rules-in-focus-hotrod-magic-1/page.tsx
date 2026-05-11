@@ -6,7 +6,7 @@ const markdownText = `# Rules in Focus: Hotrod Magic 1
 
 ##### The basic mechanics and dynamics of Anno Amagium's magic system
 
-***If you're the type who prefers to be familiar with the storytelling context of game systems before diving into the hard rules, read this Deep Lore post first. It delineates Anno Amagium's different types of magic in brief, defines related terms, and offers other narrative goodness.***
+***If you're the type who prefers to be familiar with the storytelling context of game systems before diving into the hard rules, read [this Deep Lore post](/updates/deep-lore-magic-as-music) first. It delineates Anno Amagium's different types of magic in brief, defines related terms, and offers other narrative goodness.***
 
 
 ## Taking Magic to the Track
@@ -18,7 +18,7 @@ Magic is the central focus of Anno Amagium, not only as the premise of the world
 
 A racecar isn't cool unless it looks cool, which is why we've gone through iteration after iteration on the spell UX. We will detail the various iterations of our spell blocks in a future development post, but for now, check out this annotated "Clever Flames" spell.
 
-[Annotated Clever Flames Card]
+![Annotated Clever Flames Card](/lp/blog/hotrod-1-clever-flames.png)
 
 - **Title:** What it says on the tin
 - **Tags:** Defines the spell's type, range, targeting criteria, and area-of-effect
@@ -45,11 +45,11 @@ Each spell has a Dominant Attribute that governs its efficacy. We'll be talking 
 
 **A spell's outcome is determined by its Dominant Attribute score *after* the caster has drawn their Ability Check.** Each spell has four potential outcomes, the worst being outright failure. Failed spells do not do what they are supposed to, and carry penalties that range from mild inconveniences to potential catastrophes. The next three possible outcomes are varying degrees of success: Passable, Strong, and Critical.
 
-[Pre-cast Sledge Fist Block]
+![Pre-cast Sledge Fist Block](/lp/blog/hotrod-1-sledge-fist.png)
 
 *Let's say Amaya Garcia tries to cast Sledge Fist, which is a spell that relies on Arms. Here, we can see the spell's minimum requirement for a passing grade is 30, and before casting the spell, Amaya had 32 Arms. However, when Amaya makes her Ability Check, she draws a Technical Card, which boosts her Gears score by 20 at the expense of lowering her Arms score by 5. Therefore, her spell ends in failure.*
 
-[Technical Card] [Post-cast Sledge Fist Block with pertinent values highlighted]
+![Technical Card and Post-cast Sledge Fist Block](/lp/blog/hotrod-1-technical-sledge.png)
 
 ### Switching (to) Gears
 
@@ -57,7 +57,7 @@ Each spell has a Dominant Attribute that governs its efficacy. We'll be talking 
 
 *Since Amaya now has an impressive Gears Score, she could forego magic in favor of making a ranged Attack Action with her equipped weapon set—as most ranged attacks rely on Gears—but we're talking about magic here, so she'll decide to use a spell scaling off Gears instead.*
 
-[Turning Tides Block] [Neutral Card]
+![Turning Tides and Neutral Card](/lp/blog/hotrod-1-turning-tides.png)
 
 *This time, Amaya draws a Neutral Card (no change to Attribute values), resulting in a Strong Check.*
 
@@ -81,7 +81,7 @@ If a caster fails a spell while they are already exceeding an exus threshold, th
 
 *Now that Amaya has used two spells, she has accrued a considerable amount of exus. When she attempts to cast her third spell (Clever Flames), she is already beyond its first exus threshold, and has to take on 5 additional Exus on top of the spell's standard 10 exus gain requirements. When she casts the spell, Amaya draws a Creative Card, pushing her into the spell's Critical outcome.*
 
-[Creative Card] [Highlighted Clever Flames card]
+![Creative Card and Clever Flames](/lp/blog/hotrod-1-creative-clever.png)
 
 *She isn't done yet though. Because she cast the spell at the first exus threshold, the spell now inflicts 2 stacks of the "Burn" bane on affected targets in addition to its critical outcome effects.*
 
@@ -94,7 +94,7 @@ Crucially, **every character also has a total Exus Limit.** And if a character's
 
 ## More Spells to Tell
 
-We are just getting warmed up, but this post is already lengthy enough and it covers magic's fundamentals. In part 2, we detail the features that add depth and fine-tuning to our hotrod: **different types of spells, anima, associated actions, and special resources.**
+We are just getting warmed up, but this post is already lengthy enough and it covers magic's fundamentals. [In part 2](/updates/rules-in-focus-hotrod-magic-2), we detail the features that add depth and fine-tuning to our hotrod: **different types of spells, anima, associated actions, and special resources.**
 `;
 
 export default function RulesInFocusHotrodMagic1Page() {
