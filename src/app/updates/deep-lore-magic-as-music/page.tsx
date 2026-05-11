@@ -57,7 +57,7 @@ Just as people can injure or tear their vocal cords by pushing themselves too fa
 
 ## How does this system translate to actual gameplay?
 
-Check back on Friday for our first **Rules in Focus** features. It will be a double header that details the mechanics of spellcasting, including an overview of the rules, specific examples with diagrams. All this through the lens of another easy-to-grasp metaphor: race cars. Until then!
+Check back on Wednesday for our first **Rules in Focus** features. It will be a double header that details the mechanics of spellcasting, including an overview of the rules, specific examples with diagrams. All this through the lens of another easy-to-grasp metaphor: race cars. Until then!
 `;
 
 export default function DeepLoreMagicAsMusicPage() {
