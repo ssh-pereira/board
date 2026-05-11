@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 const UpdateGame = () => {
   const now = new Date();
+  const showHotrodMagic = now >= new Date('2026-05-13T00:00:00');
   const showDevBlog = now >= new Date('2026-05-15T00:00:00');
   const showDeepLoreLaw = now >= new Date('2026-05-18T00:00:00');
 
@@ -167,58 +168,62 @@ const UpdateGame = () => {
             </div>
           </Link>
 
-          {/* Card 7 - Rules in Focus: Hotrod Magic 1 */}
-          <Link href="/updates/rules-in-focus-hotrod-magic-1" className="block">
-            <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
-              <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
-                <Image
-                  src="/lp/blog/hotrod-1-sledge-fist.png"
-                  alt="Rules in Focus: Hotrod Magic 1"
-                  width={400}
-                  height={248}
-                  className="w-full h-full object-cover"
-                />
+          {/* Card 7 - Rules in Focus: Hotrod Magic 1 (May 13) */}
+          {showHotrodMagic && (
+            <Link href="/updates/rules-in-focus-hotrod-magic-1" className="block">
+              <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+                <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                  <Image
+                    src="/lp/blog/hotrod-1-sledge-fist.png"
+                    alt="Rules in Focus: Hotrod Magic 1"
+                    width={400}
+                    height={248}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-sm text-gray-400">
+                    Hank Whitson • 8 min read
+                  </p>
+                  <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                    Rules in Focus: Hotrod Magic 1
+                  </h3>
+                  <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                    The basic mechanics and dynamics of Anno Amagium&apos;s magic
+                    system.
+                  </p>
+                </div>
               </div>
-              <div className="p-5 md:p-6">
-                <p className="text-sm text-gray-400">
-                  Hank Whitson • 8 min read
-                </p>
-                <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
-                  Rules in Focus: Hotrod Magic 1
-                </h3>
-                <p className="text-sm md:text-[16px] text-white/50 font-normal">
-                  The basic mechanics and dynamics of Anno Amagium&apos;s magic
-                  system.
-                </p>
-              </div>
-            </div>
-          </Link>
+            </Link>
+          )}
 
-          {/* Card 8 - Rules in Focus: Hotrod Magic 2 */}
-          <Link href="/updates/rules-in-focus-hotrod-magic-2" className="block">
-            <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
-              <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
-                <Image
-                  src="/lp/blog/hotrod-2-exus-shrewd.png"
-                  alt="Rules in Focus: Hotrod Magic 2"
-                  width={400}
-                  height={248}
-                  className="w-full h-full object-cover"
-                />
+          {/* Card 8 - Rules in Focus: Hotrod Magic 2 (May 13) */}
+          {showHotrodMagic && (
+            <Link href="/updates/rules-in-focus-hotrod-magic-2" className="block">
+              <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+                <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                  <Image
+                    src="/lp/blog/hotrod-2-exus-shrewd.png"
+                    alt="Rules in Focus: Hotrod Magic 2"
+                    width={400}
+                    height={248}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-sm text-gray-400">
+                    Hank Whitson • 5 min read
+                  </p>
+                  <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                    Rules in Focus: Hotrod Magic 2
+                  </h3>
+                  <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                    Adding depth, control, and nuance to the magic system.
+                  </p>
+                </div>
               </div>
-              <div className="p-5 md:p-6">
-                <p className="text-sm text-gray-400">
-                  Hank Whitson • 5 min read
-                </p>
-                <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
-                  Rules in Focus: Hotrod Magic 2
-                </h3>
-                <p className="text-sm md:text-[16px] text-white/50 font-normal">
-                  Adding depth, control, and nuance to the magic system.
-                </p>
-              </div>
-            </div>
-          </Link>
+            </Link>
+          )}
 
           {/* Card 9 - Dev Blog: Making Magic Happen (May 15) */}
           {showDevBlog && (
