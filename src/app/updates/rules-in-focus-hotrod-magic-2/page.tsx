@@ -62,11 +62,20 @@ There you have it. Anno Amagium's magic system, in all its splendor. Next week, 
 `;
 
 export default function RulesInFocusHotrodMagic2Page() {
+  const isAvailable = new Date() >= new Date('2026-05-13T00:00:00');
+
   return (
     <main className="w-full h-full min-h-screen bg-[url('/lp/Update/bgroleplay.png')] bg-cover bg-center">
       <div className="w-full h-full min-h-screen bg-black/70 flex items-center justify-center p-8 pt-24">
         <div className="w-full max-w-[800px]">
-          <MarkdownRenderer text={markdownText} />
+          {isAvailable ? (
+            <MarkdownRenderer text={markdownText} />
+          ) : (
+            <div className="flex flex-col items-center justify-center text-center py-20">
+              <h1 className="text-4xl font-semibold text-white mb-4">Coming Soon</h1>
+              <p className="text-lg text-white/50">This post will be available on May 13, 2026.</p>
+            </div>
+          )}
         </div>
       </div>
     </main>
