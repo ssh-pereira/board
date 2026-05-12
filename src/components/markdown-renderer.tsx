@@ -18,7 +18,6 @@ interface Heading {
 
 export function MarkdownRenderer({ text }: MarkdownRendererProps) {
   const [activeHeading, setActiveHeading] = useState<string>('');
-  const [showAllTexts, setShowAllTexts] = useState<boolean>(false);
   const contentRef = useRef<HTMLDivElement>(null);
   const headingRefs = useRef<{ [key: string]: HTMLElement }>({});
 
@@ -55,20 +54,6 @@ export function MarkdownRenderer({ text }: MarkdownRendererProps) {
 
   const isHeadingActive = (index: number) => {
     return activeHeadingIndex >= 0 && index <= activeHeadingIndex;
-  };
-
-  // Get line width based on heading level
-  const getLineWidth = (level: number) => {
-    switch (level) {
-      case 1:
-        return '32px';
-      case 2:
-        return '24px';
-      case 3:
-        return '16px';
-      default:
-        return '8px'; // h4, h5, h6
-    }
   };
 
   // Get margin left based on heading level for hierarchy
@@ -289,65 +274,47 @@ export function MarkdownRenderer({ text }: MarkdownRendererProps) {
   }
 
   return (
-    <div className="flex w-full gap-8">
+    <div className="relative w-full">
       {headings.length > 0 && (
-        <div className="hidden md:block min-w-[120px] max-w-[160px] w-full flex-shrink-1">
-          <div className="sticky top-6">
-            <div
-              className="-ml-6 pl-6"
-              onMouseEnter={() => setShowAllTexts(true)}
-              onMouseLeave={() => setShowAllTexts(false)}
-            >
+        <div className="hidden lg:block absolute right-full top-0 mr-12 w-[200px]">
+          <div className="sticky top-24">
+            <nav className="flex flex-col gap-0.5">
               {headings.map((heading, index) => (
-                <div key={heading.id} className="relative">
-                  <button
-                    className="group flex items-start w-full text-left cursor-pointer py-1 group"
-                    onClick={() => scrollToHeading(heading.id)}
+                <button
+                  key={heading.id}
+                  className="text-left cursor-pointer py-1 transition-colors duration-200"
+                  onClick={() => scrollToHeading(heading.id)}
+                >
+                  <span
+                    className={`text-xs font-medium transition-colors duration-200 ${getMarginLeft(
+                      heading.level
+                    )} ${
+                      isHeadingActive(index)
+                        ? 'text-[#00B4FF]'
+                        : 'text-white/40 hover:text-white/70'
+                    }`}
                   >
-                    {!showAllTexts ? (
-                      <div
-                        className={`h-0.5 transition-all duration-200 animate-fade-in ${
-                          isHeadingActive(index)
-                            ? 'bg-[#00B4FF]'
-                            : 'bg-[#0F2238]'
-                        }`}
-                        style={{ width: getLineWidth(heading.level) }}
-                      />
-                    ) : (
-                      <span
-                        className={`text-xs font-medium whitespace-nowrap transition-colors duration-200 animate-fade-in ${getMarginLeft(
-                          heading.level
-                        )} ${
-                          isHeadingActive(index)
-                            ? 'text-[#00B4FF] group-hover:text-white'
-                            : 'text-white/70 group-hover:text-white'
-                        }`}
-                      >
-                        {truncateText(heading.text, 25)}
-                      </span>
-                    )}
-                  </button>
-                </div>
+                    {truncateText(heading.text, 30)}
+                  </span>
+                </button>
               ))}
-            </div>
+            </nav>
           </div>
         </div>
       )}
 
       {/* Content */}
-      <div className="flex-1 flex justify-start">
-        <div ref={contentRef} className="w-full max-w-[600px]">
-          <MDXProvider components={enhancedMarkdownProcessor}>
-            <ReactMarkdown
-              components={enhancedMarkdownProcessor}
-              remarkPlugins={[remarkGfm]}
-              rehypePlugins={[rehypeRaw]}
-              allowedElements={allowedElements}
-            >
-              {text}
-            </ReactMarkdown>
-          </MDXProvider>
-        </div>
+      <div ref={contentRef} className="w-full">
+        <MDXProvider components={enhancedMarkdownProcessor}>
+          <ReactMarkdown
+            components={enhancedMarkdownProcessor}
+            remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeRaw]}
+            allowedElements={allowedElements}
+          >
+            {text}
+          </ReactMarkdown>
+        </MDXProvider>
       </div>
     </div>
   );
