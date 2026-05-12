@@ -282,11 +282,11 @@ export function MarkdownRenderer({ text }: MarkdownRendererProps) {
               {headings.map((heading, index) => (
                 <button
                   key={heading.id}
-                  className="text-left cursor-pointer py-1 transition-colors duration-200"
+                  className="text-left cursor-pointer py-1 transition-colors duration-200 w-full overflow-hidden"
                   onClick={() => scrollToHeading(heading.id)}
                 >
                   <span
-                    className={`text-xs font-medium transition-colors duration-200 ${getMarginLeft(
+                    className={`text-xs font-medium whitespace-nowrap overflow-hidden text-ellipsis block transition-colors duration-200 ${getMarginLeft(
                       heading.level
                     )} ${
                       isHeadingActive(index)
@@ -294,7 +294,7 @@ export function MarkdownRenderer({ text }: MarkdownRendererProps) {
                         : 'text-white/40 hover:text-white/70'
                     }`}
                   >
-                    {truncateText(heading.text, 30)}
+                    {heading.text}
                   </span>
                 </button>
               ))}
