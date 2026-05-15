@@ -25,21 +25,22 @@ export function MarkdownRenderer({ text }: MarkdownRendererProps) {
   const headings = useMemo<Heading[]>(() => {
     if (!text) return [];
 
-    const headingRegex = /^(#{1,6})\s+(.+)$/gm;
+    const headingRegex = /^(#{1,4})\s+(.+)$/gm;
     const extractedHeadings: Heading[] = [];
     let match;
 
     while ((match = headingRegex.exec(text)) !== null) {
       const level = match[1].length;
-      const text = match[2].trim();
-      const id = text
+      const rawText = match[2].trim();
+      const cleanText = rawText.replace(/\*+/g, '').replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').trim();
+      const id = cleanText
         .toLowerCase()
         .replace(/[^a-z0-9]+/g, '-')
         .replace(/^-|-$/g, '');
 
       extractedHeadings.push({
         id,
-        text,
+        text: cleanText,
         level,
       });
     }
@@ -276,7 +277,7 @@ export function MarkdownRenderer({ text }: MarkdownRendererProps) {
   return (
     <div className="relative w-full">
       {headings.length > 0 && (
-        <div className="hidden lg:block absolute right-full top-0 mr-12 w-[200px]">
+        <div className="hidden xl:block absolute right-full top-0 mr-6 w-[180px]">
           <div className="sticky top-24">
             <nav className="flex flex-col gap-0.5">
               {headings.map((heading, index) => (
@@ -286,7 +287,7 @@ export function MarkdownRenderer({ text }: MarkdownRendererProps) {
                   onClick={() => scrollToHeading(heading.id)}
                 >
                   <span
-                    className={`text-xs font-medium whitespace-nowrap overflow-hidden text-ellipsis block transition-colors duration-200 ${getMarginLeft(
+                    className={`text-xs font-medium whitespace-nowrap overflow-hidden text-ellipsis block max-w-full transition-colors duration-200 ${getMarginLeft(
                       heading.level
                     )} ${
                       isHeadingActive(index)

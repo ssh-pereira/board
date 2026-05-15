@@ -231,7 +231,7 @@ const UpdateGame = () => {
               <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
                 <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
                   <Image
-                    src="/lp/Update/cardUpdate001.png"
+                    src="/lp/blog/dev-blog-fun-flavorful-fair.png"
                     alt="Dev. Blog 1: Making Magic Happen"
                     width={400}
                     height={248}
