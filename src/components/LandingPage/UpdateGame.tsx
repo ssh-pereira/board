@@ -7,7 +7,6 @@ const UpdateGame = () => {
   const now = new Date();
   const showHotrodMagic = now >= new Date('2026-05-13T00:00:00');
   const showDevBlog = now >= new Date('2026-05-15T00:00:00');
-  const showDeepLoreLaw = now >= new Date('2026-05-18T00:00:00');
 
   return (
     <section className="bg-black w-full bg-[url('/lp/Update/bgroleplay.png')] bg-cover bg-center text-white mb-40 relative">
@@ -255,33 +254,85 @@ const UpdateGame = () => {
           )}
 
           {/* Card 10 - Deep Lore: Amagiate Law, Technology, and Culture (May 18) */}
-          {showDeepLoreLaw && (
-            <Link href="/updates/deep-lore-amagiate-law-technology-culture" className="block">
-              <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
-                <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
-                  <Image
-                    src="/lp/Update/cardUpdate002.png"
-                    alt="Deep Lore: Amagiate Law, Technology, and Culture"
-                    width={400}
-                    height={248}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-5 md:p-6">
-                  <p className="text-sm text-gray-400">
-                    Hank Whitson • May 18, 2026 • 6 min read
-                  </p>
-                  <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
-                    Deep Lore: Amagiate Law, Technology, and Culture
-                  </h3>
-                  <p className="text-sm md:text-[16px] text-white/50 font-normal">
-                    How magic shapes daily life and scientific advancement in
-                    Anno Amagium.
-                  </p>
-                </div>
+          <Link href="/updates/deep-lore-amagiate-law-technology-culture" className="block">
+            <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+              <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                <Image
+                  src="/lp/blog/deep-lore-law-inhibitor-tattoo.png"
+                  alt="Deep Lore: Amagiate Law, Technology, and Culture"
+                  width={400}
+                  height={248}
+                  className="w-full h-full object-cover"
+                />
               </div>
-            </Link>
-          )}
+              <div className="p-5 md:p-6">
+                <p className="text-sm text-gray-400">
+                  Hank Whitson • May 18, 2026 • 6 min read
+                </p>
+                <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                  Deep Lore: Amagiate Law, Technology, and Culture
+                </h3>
+                <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                  How magic shapes daily life and scientific advancement in
+                  Anno Amagium.
+                </p>
+              </div>
+            </div>
+          </Link>
+
+          {/* Card 11 - Rules in Focus: Attributes at Large (May 20) */}
+          <Link href="/updates/rules-in-focus-attributes-at-large" className="block">
+            <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+              <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                <Image
+                  src="/lp/blog/attributes-core-quadrant.png"
+                  alt="Rules in Focus: Attributes at Large"
+                  width={400}
+                  height={248}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-5 md:p-6">
+                <p className="text-sm text-gray-400">
+                  Hank Whitson • May 20, 2026 • 10 min read
+                </p>
+                <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                  Rules in Focus: Attributes at Large
+                </h3>
+                <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                  The stats that define characters, and how they shift from
+                  moment to moment.
+                </p>
+              </div>
+            </div>
+          </Link>
+
+          {/* Card 12 - Dev Blog 3: Moving Targets (May 22) */}
+          <Link href="/updates/dev-blog-moving-targets" className="block">
+            <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+              <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                <Image
+                  src="/lp/blog/moving-targets-unmatched.png"
+                  alt="Development Blog 3: Moving Targets"
+                  width={400}
+                  height={248}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-5 md:p-6">
+                <p className="text-sm text-gray-400">
+                  Hank Whitson • May 22, 2026 • 7 min read
+                </p>
+                <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                  Dev. Blog 3: Moving Targets
+                </h3>
+                <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                  Charting a path from modern board-gaming to traditional
+                  TTRPG.
+                </p>
+              </div>
+            </div>
+          </Link>
         </div>
       </div>
     </section>
