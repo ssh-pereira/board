@@ -230,7 +230,7 @@ const UpdateGame = () => {
               <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
                 <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
                   <Image
-                    src="/lp/blog/dev-blog-fun-flavorful-fair.png"
+                    src="/lp/blog/dev-blog-1-cover.png"
                     alt="Dev. Blog 1: Making Magic Happen"
                     width={400}
                     height={248}
@@ -258,7 +258,7 @@ const UpdateGame = () => {
             <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
               <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
                 <Image
-                  src="/lp/blog/deep-lore-law-inhibitor-tattoo.png"
+                  src="/lp/blog/deep-lore-law-cover.png"
                   alt="Deep Lore: Amagiate Law, Technology, and Culture"
                   width={400}
                   height={248}
@@ -312,7 +312,7 @@ const UpdateGame = () => {
             <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
               <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
                 <Image
-                  src="/lp/blog/moving-targets-unmatched.png"
+                  src="/lp/blog/dev-blog-3-moving-targets-cover.png"
                   alt="Development Blog 3: Moving Targets"
                   width={400}
                   height={248}
