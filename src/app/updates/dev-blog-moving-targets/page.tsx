@@ -57,6 +57,21 @@ In the end, having a familiar touchstone for something as fundamental as movemen
 `;
 
 export default function DevBlogMovingTargetsPage() {
+  const isAvailable = new Date() >= new Date('2026-05-22T00:00:00');
+
+  if (!isAvailable) {
+    return (
+      <main className="w-full h-full min-h-screen bg-[url('/lp/Update/bgroleplay.png')] bg-cover bg-center">
+        <div className="w-full h-full min-h-screen bg-black/70 flex items-center justify-center p-8 pt-24">
+          <div className="flex flex-col items-center justify-center text-center py-20">
+            <h1 className="text-4xl font-semibold text-white mb-4">Coming Soon</h1>
+            <p className="text-lg text-white/50">This post will be available on May 22, 2026.</p>
+          </div>
+        </div>
+      </main>
+    );
+  }
+
   return (
     <main className="w-full h-full min-h-screen bg-[url('/lp/Update/bgroleplay.png')] bg-cover bg-center">
       <div className="w-full h-full min-h-screen bg-black/70 flex items-center justify-center p-8 pt-24">

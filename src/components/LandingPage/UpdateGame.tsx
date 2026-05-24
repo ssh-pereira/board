@@ -7,6 +7,12 @@ const UpdateGame = () => {
   const now = new Date();
   const showHotrodMagic = now >= new Date('2026-05-13T00:00:00');
   const showDevBlog = now >= new Date('2026-05-15T00:00:00');
+  const showDeepLoreLaw = now >= new Date('2026-05-18T00:00:00');
+  const showAttributes = now >= new Date('2026-05-20T00:00:00');
+  const showMovingTargets = now >= new Date('2026-05-22T00:00:00');
+  const showCosmology = now >= new Date('2026-05-25T00:00:00');
+  const showTraumaRocks = now >= new Date('2026-05-27T00:00:00');
+  const showCurricula = now >= new Date('2026-05-29T00:00:00');
 
   return (
     <section className="bg-black w-full bg-[url('/lp/Update/bgroleplay.png')] bg-cover bg-center text-white mb-40 relative">
@@ -254,85 +260,205 @@ const UpdateGame = () => {
           )}
 
           {/* Card 10 - Deep Lore: Amagiate Law, Technology, and Culture (May 18) */}
-          <Link href="/updates/deep-lore-amagiate-law-technology-culture" className="block">
-            <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
-              <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
-                <Image
-                  src="/lp/blog/deep-lore-law-cover.png"
-                  alt="Deep Lore: Amagiate Law, Technology, and Culture"
-                  width={400}
-                  height={248}
-                  className="w-full h-full object-cover"
-                />
+          {showDeepLoreLaw && (
+            <Link href="/updates/deep-lore-amagiate-law-technology-culture" className="block">
+              <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+                <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                  <Image
+                    src="/lp/blog/deep-lore-law-cover.png"
+                    alt="Deep Lore: Amagiate Law, Technology, and Culture"
+                    width={400}
+                    height={248}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-sm text-gray-400">
+                    Hank Whitson • May 18, 2026 • 6 min read
+                  </p>
+                  <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                    Deep Lore: Amagiate Law, Technology, and Culture
+                  </h3>
+                  <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                    How magic shapes daily life and scientific advancement in
+                    Anno Amagium.
+                  </p>
+                </div>
               </div>
-              <div className="p-5 md:p-6">
-                <p className="text-sm text-gray-400">
-                  Hank Whitson • May 18, 2026 • 6 min read
-                </p>
-                <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
-                  Deep Lore: Amagiate Law, Technology, and Culture
-                </h3>
-                <p className="text-sm md:text-[16px] text-white/50 font-normal">
-                  How magic shapes daily life and scientific advancement in
-                  Anno Amagium.
-                </p>
-              </div>
-            </div>
-          </Link>
+            </Link>
+          )}
 
           {/* Card 11 - Rules in Focus: Attributes at Large (May 20) */}
-          <Link href="/updates/rules-in-focus-attributes-at-large" className="block">
-            <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
-              <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
-                <Image
-                  src="/lp/blog/attributes-core-quadrant.png"
-                  alt="Rules in Focus: Attributes at Large"
-                  width={400}
-                  height={248}
-                  className="w-full h-full object-cover"
-                />
+          {showAttributes && (
+            <Link href="/updates/rules-in-focus-attributes-at-large" className="block">
+              <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+                <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                  <Image
+                    src="/lp/blog/attributes-core-quadrant.png"
+                    alt="Rules in Focus: Attributes at Large"
+                    width={400}
+                    height={248}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-sm text-gray-400">
+                    Hank Whitson • May 20, 2026 • 10 min read
+                  </p>
+                  <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                    Rules in Focus: Attributes at Large
+                  </h3>
+                  <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                    The stats that define characters, and how they shift from
+                    moment to moment.
+                  </p>
+                </div>
               </div>
-              <div className="p-5 md:p-6">
-                <p className="text-sm text-gray-400">
-                  Hank Whitson • May 20, 2026 • 10 min read
-                </p>
-                <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
-                  Rules in Focus: Attributes at Large
-                </h3>
-                <p className="text-sm md:text-[16px] text-white/50 font-normal">
-                  The stats that define characters, and how they shift from
-                  moment to moment.
-                </p>
-              </div>
-            </div>
-          </Link>
+            </Link>
+          )}
 
           {/* Card 12 - Dev Blog 3: Moving Targets (May 22) */}
-          <Link href="/updates/dev-blog-moving-targets" className="block">
-            <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
-              <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
-                <Image
-                  src="/lp/blog/dev-blog-3-moving-targets-cover.png"
-                  alt="Development Blog 3: Moving Targets"
-                  width={400}
-                  height={248}
-                  className="w-full h-full object-cover"
-                />
+          {showMovingTargets && (
+            <Link href="/updates/dev-blog-moving-targets" className="block">
+              <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+                <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                  <Image
+                    src="/lp/blog/dev-blog-3-moving-targets-cover.png"
+                    alt="Development Blog 3: Moving Targets"
+                    width={400}
+                    height={248}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-sm text-gray-400">
+                    Hank Whitson • May 22, 2026 • 7 min read
+                  </p>
+                  <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                    Dev. Blog 3: Moving Targets
+                  </h3>
+                  <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                    Charting a path from modern board-gaming to traditional
+                    TTRPG.
+                  </p>
+                </div>
               </div>
-              <div className="p-5 md:p-6">
-                <p className="text-sm text-gray-400">
-                  Hank Whitson • May 22, 2026 • 7 min read
-                </p>
-                <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
-                  Dev. Blog 3: Moving Targets
-                </h3>
-                <p className="text-sm md:text-[16px] text-white/50 font-normal">
-                  Charting a path from modern board-gaming to traditional
-                  TTRPG.
-                </p>
+            </Link>
+          )}
+
+          {/* Card 13 - Deep Lore: Cosmology (May 25) */}
+          {showCosmology && (
+            <Link href="/updates/deep-lore-cosmology" className="block">
+              <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+                <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                  <Image
+                    src="/lp/blog/cosmology-cover.png"
+                    alt="Deep Lore: Cosmology"
+                    width={400}
+                    height={248}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-sm text-gray-400">
+                    Hank Whitson • May 25, 2026 • 10 min read
+                  </p>
+                  <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                    Deep Lore: Cosmology
+                  </h3>
+                  <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                    Our place in the universe, its place in the multiverse, and
+                    the entities that inhabit them.
+                  </p>
+                </div>
               </div>
-            </div>
-          </Link>
+            </Link>
+          )}
+
+          {/* Card 14 - Rules in Focus: Trauma Rocks 1 (May 27) */}
+          {showTraumaRocks && (
+            <Link href="/updates/rules-in-focus-trauma-rocks-1" className="block">
+              <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+                <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                  <Image
+                    src="/lp/blog/trauma-rocks-1-cover.png"
+                    alt="Rules in Focus: Trauma Rocks 1"
+                    width={400}
+                    height={248}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-sm text-gray-400">
+                    Hank Whitson • May 27, 2026 • 8 min read
+                  </p>
+                  <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                    Rules in Focus: Trauma Rocks 1
+                  </h3>
+                  <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                    Let&apos;s put the &quot;roll&quot; in roleplaying game.
+                  </p>
+                </div>
+              </div>
+            </Link>
+          )}
+
+          {/* Card 15 - Rules in Focus: Trauma Rocks 2 (May 27) */}
+          {showTraumaRocks && (
+            <Link href="/updates/rules-in-focus-trauma-rocks-2" className="block">
+              <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+                <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                  <Image
+                    src="/lp/blog/trauma-rocks-2-cover.png"
+                    alt="Rules in Focus: Trauma Rocks 2"
+                    width={400}
+                    height={248}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-sm text-gray-400">
+                    Hank Whitson • May 27, 2026 • 7 min read
+                  </p>
+                  <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                    Rules in Focus: Trauma Rocks 2
+                  </h3>
+                  <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                    Nothing Hits Quite Like a Natural 99.
+                  </p>
+                </div>
+              </div>
+            </Link>
+          )}
+
+          {/* Card 16 - Dev Blog: Concerning Curricula (May 29) */}
+          {showCurricula && (
+            <Link href="/updates/dev-blog-concerning-curricula" className="block">
+              <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+                <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                  <Image
+                    src="/lp/blog/curricula-cover.png"
+                    alt="Game Designers' Five-on-Five Concerning Curricula"
+                    width={400}
+                    height={248}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-sm text-gray-400">
+                    Hank Whitson • May 29, 2026 • 12 min read
+                  </p>
+                  <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                    Five-on-Five Concerning Curricula
+                  </h3>
+                  <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                    I ask him 5 questions. He asks me 5 questions. The topic?
+                    Curricula.
+                  </p>
+                </div>
+              </div>
+            </Link>
+          )}
         </div>
       </div>
     </section>
