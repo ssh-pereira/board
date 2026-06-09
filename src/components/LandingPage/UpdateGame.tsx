@@ -13,6 +13,9 @@ const UpdateGame = () => {
   const showCosmology = now >= new Date('2026-05-25T00:00:00');
   const showTraumaRocks = now >= new Date('2026-05-27T00:00:00');
   const showCurricula = now >= new Date('2026-05-29T00:00:00');
+  const showBrieferHistory = now >= new Date('2026-06-08T00:00:00');
+  const showTurnsInitiative = now >= new Date('2026-06-10T00:00:00');
+  const showTalesBrian = now >= new Date('2026-06-12T00:00:00');
 
   return (
     <section className="bg-black w-full bg-[url('/lp/Update/bgroleplay.png')] bg-cover bg-center text-white mb-40 relative">
@@ -454,6 +457,88 @@ const UpdateGame = () => {
                   <p className="text-sm md:text-[16px] text-white/50 font-normal">
                     I ask him 5 questions. He asks me 5 questions. The topic?
                     Curricula.
+                  </p>
+                </div>
+              </div>
+            </Link>
+          )}
+
+          {/* Card 17 - Deep Lore: A Briefer History of Magic (Jun 8) */}
+          {showBrieferHistory && (
+            <Link href="/updates/deep-lore-briefer-history-of-magic" className="block">
+              <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+                <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                  <Image
+                    src="/lp/blog/history-img-1.png"
+                    alt="Deep Lore: A Briefer History of Magic"
+                    width={400}
+                    height={248}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-sm text-gray-400">
+                    Hank Whitson • Jun 8, 2026 • 5 min read
+                  </p>
+                  <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                    Deep Lore: A Briefer History of Magic
+                  </h3>
+                  <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                    As written by victors, remembered by survivors, and ignored
+                    by fools determined to repeat it.
+                  </p>
+                </div>
+              </div>
+            </Link>
+          )}
+
+          {/* Card 18 - Rules in Focus: Turns & Initiative (Jun 10) */}
+          {showTurnsInitiative && (
+            <Link href="/updates/rules-in-focus-turns-and-initiative" className="block">
+              <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+                <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                  <Image
+                    src="/lp/blog/turns-img-1.png"
+                    alt="Rules in Focus: Turns & Initiative"
+                    width={400}
+                    height={248}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-sm text-gray-400">
+                    Hank Whitson • Jun 10, 2026 • 4 min read
+                  </p>
+                  <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                    Rules in Focus: Turns &amp; Initiative
+                  </h3>
+                  <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                    The Hustle and Groove of Fighting Folk.
+                  </p>
+                </div>
+              </div>
+            </Link>
+          )}
+
+          {/* Card 19 - Tales from the Table: Brian (Jun 12) */}
+          {showTalesBrian && (
+            <Link href="/updates/tales-from-the-table-brian" className="block">
+              <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+                <div className="w-full h-[200px] md:h-[248px] overflow-hidden bg-[#1a2a3a] flex items-center justify-center">
+                  <h3 className="text-2xl md:text-3xl font-semibold text-white/80 text-center px-6">
+                    Tales from the Table
+                  </h3>
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-sm text-gray-400">
+                    Brian • Jun 12, 2026 • 10 min read
+                  </p>
+                  <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                    Tales from the Table - Brian
+                  </h3>
+                  <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                    A round of questions with a long-time Anno Amagium
+                    beta-tester.
                   </p>
                 </div>
               </div>
