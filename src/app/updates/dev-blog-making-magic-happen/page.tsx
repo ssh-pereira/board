@@ -4,7 +4,7 @@ import { MarkdownRenderer } from '@/components/markdown-renderer';
 
 const PUBLISH_DATE = new Date('2026-05-15T00:00:00');
 
-const markdownText = `# *Anno Amagium* – Dev. Blog 1: Making Magic Happen
+const markdownText = `# *Anno Amagium* Dev. Blog 1: Making Magic Happen
 
 ##### What we wanted out of our magic system and how we've gone about getting it
 

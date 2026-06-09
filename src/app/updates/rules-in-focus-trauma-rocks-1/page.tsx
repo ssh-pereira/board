@@ -2,7 +2,7 @@
 
 import { MarkdownRenderer } from '@/components/markdown-renderer';
 
-const markdownText = `# *Anno Amagium* – Rules in Focus: Trauma Rocks 1
+const markdownText = `# *Anno Amagium* Rules in Focus: Trauma Rocks 1
 
 ##### Let's put the "roll" in roleplaying game
 

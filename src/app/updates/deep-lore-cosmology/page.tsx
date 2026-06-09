@@ -2,7 +2,7 @@
 
 import { MarkdownRenderer } from '@/components/markdown-renderer';
 
-const markdownText = `# *Anno Amagium* – Deep Lore: Cosmology
+const markdownText = `# *Anno Amagium* Deep Lore: Cosmology
 
 ##### Our place in the universe, its place in the multiverse, the strange planes between and beyond, as well as the various entities that inhabit them
 

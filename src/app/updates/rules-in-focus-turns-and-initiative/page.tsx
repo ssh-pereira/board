@@ -2,7 +2,7 @@
 
 import { MarkdownRenderer } from '@/components/markdown-renderer';
 
-const markdownText = `# *Anno Amagium* – Rules In Focus: Turns & Initiative
+const markdownText = `# *Anno Amagium* Rules In Focus: Turns & Initiative
 
 ##### The Hustle and Groove of Fighting Folk
 

@@ -2,7 +2,7 @@
 
 import { MarkdownRenderer } from '@/components/markdown-renderer';
 
-const markdownText = `# *Anno Amagium* – Rules in Focus: Trauma Rocks 2
+const markdownText = `# *Anno Amagium* Rules in Focus: Trauma Rocks 2
 
 ##### Nothing Hits Quite Like a Natural 99
 

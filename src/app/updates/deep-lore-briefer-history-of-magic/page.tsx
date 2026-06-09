@@ -2,7 +2,7 @@
 
 import { MarkdownRenderer } from '@/components/markdown-renderer';
 
-const markdownText = `# *Anno Amagium* – Deep Lore: A Briefer History of Magic
+const markdownText = `# *Anno Amagium* Deep Lore: A Briefer History of Magic
 
 ##### As written by victors, remembered by survivors, and ignored by fools determined to repeat it
 

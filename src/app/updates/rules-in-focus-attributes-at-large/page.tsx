@@ -2,7 +2,7 @@
 
 import { MarkdownRenderer } from '@/components/markdown-renderer';
 
-const markdownText = `# *Anno Amagium* – Rules in Focus: Attributes at Large
+const markdownText = `# *Anno Amagium* Rules in Focus: Attributes at Large
 
 ##### The stats that define characters, and how they shift from moment to moment
 

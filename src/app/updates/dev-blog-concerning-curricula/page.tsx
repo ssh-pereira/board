@@ -2,7 +2,7 @@
 
 import { MarkdownRenderer } from '@/components/markdown-renderer';
 
-const markdownText = `# *Anno Amagium* – Development Blog 3: Game Designers' Five-on-Five Concerning Curricula
+const markdownText = `# *Anno Amagium* Development Blog 3: Game Designers' Five-on-Five Concerning Curricula
 
 ##### I ask him 5 questions. He asks me 5 questions. The topic? Curricula. Anything goes.
 

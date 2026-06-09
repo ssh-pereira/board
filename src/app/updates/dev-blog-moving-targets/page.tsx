@@ -2,7 +2,7 @@
 
 import { MarkdownRenderer } from '@/components/markdown-renderer';
 
-const markdownText = `# *Anno Amagium* – Development Blog 3: Moving Targets
+const markdownText = `# *Anno Amagium* Development Blog 3: Moving Targets
 
 ##### Charting a path from modern board-gaming to traditional TTRPG
 
