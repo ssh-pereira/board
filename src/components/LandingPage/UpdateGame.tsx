@@ -16,6 +16,9 @@ const UpdateGame = () => {
   const showBrieferHistory = now >= new Date('2026-06-08T00:00:00');
   const showTurnsInitiative = now >= new Date('2026-06-10T00:00:00');
   const showTalesBrian = now >= new Date('2026-06-12T00:00:00');
+  const showWhatMakesAmagia = now >= new Date('2026-06-15T00:00:00');
+  const showReactions = now >= new Date('2026-06-17T00:00:00');
+  const showTalesDootridge = now >= new Date('2026-06-19T00:00:00');
 
   return (
     <section className="bg-black w-full bg-[url('/lp/Update/bgroleplay.png')] bg-cover bg-center text-white mb-40 relative">
@@ -535,6 +538,87 @@ const UpdateGame = () => {
                   </p>
                   <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
                     Tales from the Table - Brian
+                  </h3>
+                  <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                    A round of questions with a long-time Anno Amagium
+                    beta-tester.
+                  </p>
+                </div>
+              </div>
+            </Link>
+          )}
+
+          {/* Card 20 - Deep Lore: What Makes an Amagia? (Jun 15) */}
+          {showWhatMakesAmagia && (
+            <Link href="/updates/deep-lore-what-makes-an-amagia" className="block">
+              <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+                <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                  <Image
+                    src="/lp/blog/amagia-img-1.png"
+                    alt="Deep Lore: What Makes an Amagia?"
+                    width={400}
+                    height={248}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-sm text-gray-400">
+                    Hank Whitson • Jun 15, 2026 • 7 min read
+                  </p>
+                  <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                    Deep Lore: What Makes an Amagia?
+                  </h3>
+                  <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                    To Mage or Not to Mage.
+                  </p>
+                </div>
+              </div>
+            </Link>
+          )}
+
+          {/* Card 21 - Rules in Focus: Reactions 101 (Jun 17) */}
+          {showReactions && (
+            <Link href="/updates/rules-in-focus-reactions" className="block">
+              <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+                <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                  <Image
+                    src="/lp/blog/reactions-img-2.png"
+                    alt="Rules in Focus: Reactions 101"
+                    width={400}
+                    height={248}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-sm text-gray-400">
+                    Hank Whitson • Jun 17, 2026 • 4 min read
+                  </p>
+                  <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                    Rules in Focus: Reactions 101
+                  </h3>
+                  <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                    Provocation Meets Exploitation.
+                  </p>
+                </div>
+              </div>
+            </Link>
+          )}
+
+          {/* Card 22 - Tales from the Table: Dootridge (Jun 19) */}
+          {showTalesDootridge && (
+            <Link href="/updates/tales-from-the-table-dootridge" className="block">
+              <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+                <div className="w-full h-[200px] md:h-[248px] overflow-hidden bg-[#1a2a3a] flex items-center justify-center">
+                  <h3 className="text-2xl md:text-3xl font-semibold text-white/80 text-center px-6">
+                    Tales from the Table
+                  </h3>
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-sm text-gray-400">
+                    Dootridge • Jun 19, 2026 • 10 min read
+                  </p>
+                  <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                    Tales from the Table - Dootridge
                   </h3>
                   <p className="text-sm md:text-[16px] text-white/50 font-normal">
                     A round of questions with a long-time Anno Amagium
