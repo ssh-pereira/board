@@ -63,7 +63,7 @@ It is also worth noting that the Arroyo's Athenaeum Campus is less integrated in
 
 Neither a small, isolated city like Dalhart, nor a mega-metropolis like New Amsterdam, Arroyo is a suburban middle ground that many players will find familiar, making it ideal for easing people into the system and the world. It is the most flexible of our first three settings, accommodating intimate mysteries and sprawling epics with global stakes. Given its proximity to Hollywood, Arroyo is particularly well-suited for cases that explore the fickle nature of fame, the excesses of celebrity, and the dark side of the entertainment industry.
 
-*If you are interested in learning more about Arroyo, we strongly recommend reading [our lore book](https://annoamagium.com), which covers the city's history in greater detail.*
+*If you are interested in learning more about Arroyo, we strongly recommend reading [our lore book](https://drive.google.com/file/d/1E4zX8y6NWslA85jUoufq4K4wN0sL3vRb/view?usp=sharing), which covers the city's history in greater detail.*
 `;
 
 export default function DeepLoreSettingOverviewArroyoPage() {

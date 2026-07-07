@@ -20,6 +20,8 @@ const UpdateGame = () => {
   const showReactions = now >= new Date('2026-06-17T00:00:00');
   const showTalesDootridge = now >= new Date('2026-06-19T00:00:00');
   const showSettingOverviewArroyo = now >= new Date('2026-06-29T00:00:00');
+  const showCharacterCreationCurricula = now >= new Date('2026-07-01T00:00:00');
+  const showTalesRuby = now >= new Date('2026-07-03T00:00:00');
 
   return (
     <section className="bg-black w-full bg-[url('/lp/Update/bgroleplay.png')] bg-cover bg-center text-white mb-40 relative">
@@ -652,6 +654,59 @@ const UpdateGame = () => {
                   </h3>
                   <p className="text-sm md:text-[16px] text-white/50 font-normal">
                     All About the City of Bridges and Briars.
+                  </p>
+                </div>
+              </div>
+            </Link>
+          )}
+
+          {/* Card 24 - Rules in Focus: Character Creation - Curricula (Jul 1) */}
+          {showCharacterCreationCurricula && (
+            <Link href="/updates/rules-in-focus-character-creation-curricula" className="block">
+              <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+                <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                  <Image
+                    src="/lp/blog/char-curricula-5.png"
+                    alt="Rules in Focus: Character Creation - Curricula"
+                    width={400}
+                    height={248}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-sm text-gray-400">
+                    Hank Whitson • Jul 1, 2026 • 8 min read
+                  </p>
+                  <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                    Rules in Focus: Character Creation - Curricula
+                  </h3>
+                  <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                    The Key to Character Building in Anno Amagium.
+                  </p>
+                </div>
+              </div>
+            </Link>
+          )}
+
+          {/* Card 25 - Tales from the Table: Ruby (Jul 3) */}
+          {showTalesRuby && (
+            <Link href="/updates/tales-from-the-table-ruby" className="block">
+              <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+                <div className="w-full h-[200px] md:h-[248px] overflow-hidden bg-[#1a2a3a] flex items-center justify-center">
+                  <h3 className="text-2xl md:text-3xl font-semibold text-white/80 text-center px-6">
+                    Tales from the Table
+                  </h3>
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-sm text-gray-400">
+                    Ruby • Jul 3, 2026 • 9 min read
+                  </p>
+                  <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                    Tales from the Table - Ruby
+                  </h3>
+                  <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                    A round of questions with a long-time Anno Amagium
+                    beta-tester.
                   </p>
                 </div>
               </div>
