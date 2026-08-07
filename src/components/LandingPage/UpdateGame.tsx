@@ -22,6 +22,9 @@ const UpdateGame = () => {
   const showSettingOverviewArroyo = now >= new Date('2026-06-29T00:00:00');
   const showCharacterCreationCurricula = now >= new Date('2026-07-01T00:00:00');
   const showTalesRuby = now >= new Date('2026-07-03T00:00:00');
+  const showSettingOverviewDalhart = now >= new Date('2026-07-22T00:00:00');
+  const showCharacterBuildingTraits = now >= new Date('2026-07-29T00:00:00');
+  const showTalesLotus = now >= new Date('2026-08-05T00:00:00');
 
   return (
     <section className="bg-black w-full bg-[url('/lp/Update/bgroleplay.png')] bg-cover bg-center text-white mb-40 relative">
@@ -703,6 +706,87 @@ const UpdateGame = () => {
                   </p>
                   <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
                     Tales from the Table - Ruby
+                  </h3>
+                  <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                    A round of questions with a long-time Anno Amagium
+                    beta-tester.
+                  </p>
+                </div>
+              </div>
+            </Link>
+          )}
+
+          {/* Card 26 - Deep Lore: Setting Overview - Dalhart (Jul 22) */}
+          {showSettingOverviewDalhart && (
+            <Link href="/updates/deep-lore-setting-overview-dalhart" className="block">
+              <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+                <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                  <Image
+                    src="/lp/blog/setting-overview-dalhart-map.png"
+                    alt="Deep Lore: Setting Overview - Dalhart"
+                    width={400}
+                    height={248}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-sm text-gray-400">
+                    Hank Whitson • Jul 22, 2026 • 7 min read
+                  </p>
+                  <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                    Deep Lore: Setting Overview - Dalhart
+                  </h3>
+                  <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                    All About the Wyrd West.
+                  </p>
+                </div>
+              </div>
+            </Link>
+          )}
+
+          {/* Card 27 - Rules in Focus: Character Building - Traits (Jul 29) */}
+          {showCharacterBuildingTraits && (
+            <Link href="/updates/rules-in-focus-character-building-traits" className="block">
+              <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+                <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                  <Image
+                    src="/lp/blog/char-traits-4.png"
+                    alt="Rules in Focus: Character Building - Traits"
+                    width={400}
+                    height={248}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-sm text-gray-400">
+                    Hank Whitson • Jul 29, 2026 • 8 min read
+                  </p>
+                  <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                    Rules in Focus: Character Building - Traits
+                  </h3>
+                  <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                    Turning Points Trump Fine Tuning.
+                  </p>
+                </div>
+              </div>
+            </Link>
+          )}
+
+          {/* Card 28 - Tales from the Table: Lotus (Aug 5) */}
+          {showTalesLotus && (
+            <Link href="/updates/tales-from-the-table-lotus" className="block">
+              <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+                <div className="w-full h-[200px] md:h-[248px] overflow-hidden bg-[#1a2a3a] flex items-center justify-center">
+                  <h3 className="text-2xl md:text-3xl font-semibold text-white/80 text-center px-6">
+                    Tales from the Table
+                  </h3>
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-sm text-gray-400">
+                    Lotus • Aug 5, 2026 • 11 min read
+                  </p>
+                  <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                    Tales from the Table - Lotus
                   </h3>
                   <p className="text-sm md:text-[16px] text-white/50 font-normal">
                     A round of questions with a long-time Anno Amagium
