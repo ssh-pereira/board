@@ -23,6 +23,7 @@ const MarkdownProcessor = {
   strong: (props: any) => (
     <strong className="font-semibold text-white" {...props} />
   ),
+  em: (props: any) => <em className="italic" {...props} />,
   u: (props: any) => <u className="underline text-white" {...props} />,
   ul: (props: any) => (
     <ul

@@ -248,6 +248,7 @@ export function MarkdownRenderer({ text }: MarkdownRendererProps) {
     'h5',
     'h6',
     'strong',
+    'em',
     'u',
     'ul',
     'ol',
