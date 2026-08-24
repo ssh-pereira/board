@@ -25,6 +25,8 @@ const UpdateGame = () => {
   const showSettingOverviewDalhart = now >= new Date('2026-07-22T00:00:00');
   const showCharacterBuildingTraits = now >= new Date('2026-07-29T00:00:00');
   const showTalesLotus = now >= new Date('2026-08-05T00:00:00');
+  const showSettingOverviewNewAmsterdam = now >= new Date('2026-08-12T00:00:00');
+  const showAbilityRefinements = now >= new Date('2026-08-19T00:00:00');
 
   return (
     <section className="bg-black w-full bg-[url('/lp/Update/bgroleplay.png')] bg-cover bg-center text-white mb-40 relative">
@@ -791,6 +793,62 @@ const UpdateGame = () => {
                   <p className="text-sm md:text-[16px] text-white/50 font-normal">
                     A round of questions with a long-time Anno Amagium
                     beta-tester.
+                  </p>
+                </div>
+              </div>
+            </Link>
+          )}
+
+          {/* Card 29 - Deep Lore: Setting Overview - New Amsterdam (Aug 12) */}
+          {showSettingOverviewNewAmsterdam && (
+            <Link href="/updates/deep-lore-setting-overview-new-amsterdam" className="block">
+              <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+                <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                  <Image
+                    src="/lp/blog/setting-overview-newam-map.png"
+                    alt="Deep Lore: Setting Overview - New Amsterdam"
+                    width={400}
+                    height={248}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-sm text-gray-400">
+                    Hank Whitson • Aug 12, 2026 • 9 min read
+                  </p>
+                  <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                    Deep Lore: Setting Overview - New Amsterdam
+                  </h3>
+                  <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                    All about the Global Crossroads.
+                  </p>
+                </div>
+              </div>
+            </Link>
+          )}
+
+          {/* Card 30 - Rules in Focus: Character Creation - Ability Refinements (Aug 19) */}
+          {showAbilityRefinements && (
+            <Link href="/updates/rules-in-focus-character-creation-ability-refinements" className="block">
+              <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+                <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                  <Image
+                    src="/lp/blog/attributes-ability-deck.png"
+                    alt="Rules in Focus: Character Creation - Ability Refinements"
+                    width={400}
+                    height={248}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-5 md:p-6">
+                  <p className="text-sm text-gray-400">
+                    Hank Whitson • Aug 19, 2026 • 4 min read
+                  </p>
+                  <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                    Rules in Focus: Character Creation - Ability Refinements
+                  </h3>
+                  <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                    Fine Tuning Your Character Via Cards.
                   </p>
                 </div>
               </div>
